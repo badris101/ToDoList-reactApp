@@ -1,0 +1,36 @@
+@import '_Variables.scss';
+
+.Action{
+    display: flex;
+    margin-top: 20px;
+
+    button{
+        background-color: $backHeader;
+        border: none;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:focus {
+        outline:0;
+    }
+
+    button:disabled,
+    button[disabled]{
+        background-color: $blockDisabled;
+        color: #f8f8f8;
+        cursor: default;
+    }
+
+    .Removebtn{
+        font-size: 17px;
+        flex-grow: 1;
+        margin-right: 5px;
+    }
+    .Pickbtn{
+        font-size: 17px;
+        flex-grow: 1;
+        margin-left: 5px;
+    }
+}

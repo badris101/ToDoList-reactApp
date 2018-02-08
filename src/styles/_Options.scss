@@ -1,0 +1,35 @@
+@import '_Variables.scss';
+
+.Options{
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    
+    .OptionTxt{
+        display: flex;
+        flex-grow: 1;
+        background-color: $backHeader;
+        padding: 20px;
+        padding-bottom: 0px;
+        word-wrap: break-word;
+        p{
+            flex-grow: 1;
+            color: $colorOption;
+            max-width: 410px;
+        }
+        a{
+            cursor: pointer;
+        }
+        i{
+            color: $colorOption;
+            text-decoration: none;
+        }
+    }
+    .Message{
+        background-color: $blockDisabled;
+        color: #f8f8f8;
+        font-weight: bold;
+        padding: 30px;
+    }
+}

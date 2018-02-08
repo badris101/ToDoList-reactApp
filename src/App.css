@@ -1,0 +1,163 @@
+.ToDoList {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .ToDoList .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    min-width: 450px;
+    max-width: 50%; }
+  .ToDoList .box {
+    min-width: 200px;
+    flex-grow: 1; }
+  .ToDoList .card {
+    background-color: #2c2c54;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.Action {
+  display: flex;
+  margin-top: 20px; }
+  .Action button {
+    background-color: #40407a;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer; }
+  .Action button:focus {
+    outline: 0; }
+  .Action button:disabled,
+  .Action button[disabled] {
+    background-color: #6363a8;
+    color: #f8f8f8;
+    cursor: default; }
+  .Action .Removebtn {
+    font-size: 17px;
+    flex-grow: 1;
+    margin-right: 5px; }
+  .Action .Pickbtn {
+    font-size: 17px;
+    flex-grow: 1;
+    margin-left: 5px; }
+
+.AddOption form {
+  display: flex;
+  flex-grow: 1;
+  position: relative; }
+  .AddOption form i {
+    position: absolute;
+    color: white;
+    top: 13px;
+    left: 20px; }
+
+.AddOption input {
+  height: 40px;
+  background-color: #40407a;
+  text-indent: 45px;
+  border: none;
+  flex-grow: 1;
+  color: white;
+  font-weight: bold;
+  font-family: 'Prosto One', cursive; }
+
+.AddOption input:focus {
+  outline: none; }
+
+.AddOption input::placeholder {
+  color: white; }
+
+.AddOption .ErrorMsg {
+  background-color: #ff5e57;
+  padding: 20px;
+  color: white;
+  margin-top: 19px;
+  font-size: 12px;
+  font-weight: bold; }
+
+.Header {
+  background-color: #40407a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: white;
+  display: flex;
+  height: 50px; }
+  .Header .title {
+    margin: 17px;
+    flex-grow: 1;
+    padding-right: 75px; }
+    .Header .title h1 {
+      font-size: 15px;
+      text-align: center; }
+  .Header .menu-icon {
+    margin: 17px; }
+    .Header .menu-icon a {
+      text-decoration: none;
+      color: white; }
+
+.Options {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  margin-bottom: 20px; }
+  .Options .OptionTxt {
+    display: flex;
+    flex-grow: 1;
+    background-color: #40407a;
+    padding: 20px;
+    padding-bottom: 0px;
+    word-wrap: break-word; }
+    .Options .OptionTxt p {
+      flex-grow: 1;
+      color: white;
+      max-width: 410px; }
+    .Options .OptionTxt a {
+      cursor: pointer; }
+    .Options .OptionTxt i {
+      color: white;
+      text-decoration: none; }
+  .Options .Message {
+    background-color: #6363a8;
+    color: #f8f8f8;
+    font-weight: bold;
+    padding: 30px; }
+
+.ReactModalPortal > div {
+  opacity: 0; }
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 200ms ease-in-out; }
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1; }
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0; }
+
+.modal {
+  background-color: #2c3e50;
+  color: white;
+  max-width: 30rem;
+  outline: none;
+  padding: 20px;
+  text-align: center; }
+
+.modal__title {
+  font-size: 26px; }
+
+.modal__btn {
+  background-color: #40407a;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  font-family: 'Prosto One', cursive;
+  color: white;
+  cursor: pointer;
+  outline: none; }

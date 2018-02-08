@@ -1,0 +1,41 @@
+@import '_Variables.scss';
+
+.AddOption {
+    form{
+        display: flex;
+        flex-grow: 1;
+        position: relative;
+
+        i{
+            position: absolute;
+            color: white;
+            top: 13px;
+            left:20px;
+        }
+    }
+    input{
+        height: 40px;
+        background-color: $backHeader;
+        text-indent: 45px;
+        border: none;
+        flex-grow: 1;
+        color: white;
+        font-weight: bold;
+        font-family: 'Prosto One', cursive;
+    }
+    input:focus{
+        outline: none;
+    }
+    input::placeholder {
+        color: white;
+    }
+
+    .ErrorMsg{
+        background-color: $MsgErrorColor;
+        padding: 20px;
+        color: white;
+        margin-top: 19px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
